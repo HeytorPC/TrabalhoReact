@@ -1,0 +1,44 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  height: 72px;
+  width: auto;
+  background-color: #0060a0;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  color:white;
+  font-size: 1.7rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  
+}
+
+.searchContainer {
+  display: flex;
+  margin-top: 10px;
+}
+
+.searchContainer input {
+  padding: 5px;
+ 
+}
+
+.searchContainer button {
+  padding: 5px;
+  background: #f1f1f1;
+  border: none;
+  cursor: pointer;
+ 
+}
+.logoImage {
+  width: 5.3rem; 
+  height: 4.5rem;
+ 
+}
+
