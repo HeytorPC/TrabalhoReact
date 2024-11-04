@@ -1,17 +1,18 @@
 import React from 'react';
-import styles from './Principal.module.css';
+import styles from './principal.module.css';
 import bannerHome from '/src/assets/bannerHome.jpg';
-import DestinosEmDestaque from './src/components/DestinosEmDestaque/DestinosEmDestaque.jsx'; //DestinosEmDestaquesNãoTáImportando
+import DestinosEmDestaque from '../../components/DestinosEmDestaque/DestinosEmDestaque';
 
-function Principal() {
+function Principal() { 
   return (
     <div className={styles.homeContainer}>
       <div className={styles.banner}>
-        <img src={bannerHome} alt="Banner Home" className={styles.bannerHome} />
+        <img src={bannerHome} alt="bannerHome" className={styles.bannerHome} />
       </div>
       <h2 className={styles.destinos}>Destinos em Destaque</h2>
-          <DestinosEmDestaque />
+      <DestinosEmDestaque />
     </div>
   );
 }
-export default Principal;
+
+export default Principal; 
