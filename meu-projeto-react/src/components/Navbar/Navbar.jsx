@@ -19,7 +19,6 @@ function Navbar() {
       </nav>
       <div className={styles.searchContainer}>
         <input type="text" placeholder="Buscar..." />
-        <button>🔍</button>
       </div>
     </header>
   );

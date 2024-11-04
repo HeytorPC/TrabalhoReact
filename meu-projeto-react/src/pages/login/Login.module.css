@@ -1,4 +1,79 @@
-h1{
-    color: black;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 100px;
+    height: 100vh; 
+    width: 100%; 
+  }
+  
+  .User {
+    padding-top: 20px;
+    width: 56px;
+    height: 78px;
+  }
+  
+  .Cadastro {
+    padding: 40px;
+    border-radius: 13px;
     align-items: center;
-}
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 300px; 
+    background: linear-gradient(#0060a0, #a36ca3);
+    font-family: 'Open Sans', sans-serif;
+    opacity: 0; 
+    animation: fadeIn 2s forwards; 
+  }
+  @keyframes fadeIn {
+     to { opacity: 1; }
+     }
+  
+  h2 {
+    margin-bottom: 20px; 
+    
+  }
+  input { 
+     width: 80%; 
+     padding: 10px; 
+     margin-bottom: 15px; 
+     border: 1px solid #ccc;
+      border-radius: 20px; 
+     font-size: 16px;
+  }
+  .nome {
+    margin-bottom: 15px; 
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .email {
+    margin-bottom: 15px; 
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .senha {
+    margin-bottom: 15px; 
+    font-family: 'Open Sans', sans-serif;
+  }
+.Botao{ width: 80%; 
+    padding: 10px; 
+    margin-top: 15px; /* Espaçamento acima do botão */ 
+    border: none; 
+    border-radius: 20px; 
+    font-size: 16px; 
+    background-color: #4b7a9c; /* Cor de fundo do botão */ 
+    color: white; 
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+     transition: background-color 0.3s; } 
+     
+.Botao:hover { background-color:#273c49; /* Cor de fundo ao passar o mouse */ }
+  
