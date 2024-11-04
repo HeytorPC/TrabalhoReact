@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './principal.module.css';
+import styles from './Principal.module.css';
 import bannerHome from '/src/assets/bannerHome.jpg';
 import DestinosEmDestaque from '../../components/DestinosEmDestaque/DestinosEmDestaque';
 
