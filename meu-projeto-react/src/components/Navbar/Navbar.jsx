@@ -1,6 +1,8 @@
 import React from 'react';
 import styles from './Navbar.module.css';
 import logoVista from '../../assets/logoVista.png';
+import loginIcon from '../../assets/user_login_man-512.png';
+import carrinhoIcon from '../../assets/2611181.png'
 
 function Navbar() {
   return (
@@ -13,8 +15,10 @@ function Navbar() {
           <li>Home</li>
           <li>Sobre</li>
           <li>Produtos</li>
-          <li>Carrinho</li>
-          <li>Login</li>
+          {/* <li>Carrinho</li> */}
+          <img src={carrinhoIcon} alt="Login" className={styles.CarrinhoIcon} />
+          {/* <li>Login</li> */}
+          <img src={loginIcon} alt="Login" className={styles.loginIcon} />
         </ul>
       </nav>
       <div className={styles.searchContainer}>

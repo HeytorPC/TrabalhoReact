@@ -12,7 +12,7 @@ const administradores = [
   { id: 2, nome: 'Guilherme Senna', imagem: adm2, descricao: 'Mono Ornn e Fracassado' },
   { id: 3, nome: 'Heytor Cantelmo', imagem: adm3, descricao: 'Garoto de Programa (Não é TI) Analista de Banco de Dados'},
   { id: 4, nome: 'Victor Hugo Schuenck ', imagem: adm4, descricao: 'Marketeiro e corredor' },
-  { id: 5, nome: 'Matheus Azevedo', imagem: adm5, descricao: 'General do Exercito Brasileiro' },
+  { id: 5, nome: 'Mateus Azevedo', imagem: adm5, descricao: 'General do Exercito Brasileiro' },
   { id: 6, nome: 'Julia Henriques', imagem: adm6, descricao: 'Gosto de API' },
 ];
 
