@@ -1,4 +1,4 @@
-/* Reset CSS (boas práticas) */
+/* Reset CSS (e uma questão de boas praticas)*/
 * {
   margin: 0;
   padding: 0;
@@ -39,6 +39,7 @@
 .searchContainer button {
   padding: 5px;
   background: #f1f1f1;
+
   cursor: pointer;
 }
 
