@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Sobre() {
+function Produtos() {
   return (
     <>
       
@@ -8,4 +8,4 @@ function Sobre() {
   );
 }
 
-export default Sobre;
+export default Produtos;
