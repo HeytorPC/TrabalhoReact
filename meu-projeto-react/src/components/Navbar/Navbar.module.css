@@ -1,4 +1,4 @@
-/* Reset CSS */
+/* Reset CSS (boas práticas) */
 * {
   margin: 0;
   padding: 0;
@@ -39,11 +39,10 @@
 .searchContainer button {
   padding: 5px;
   background: #f1f1f1;
-  border: none;
   cursor: pointer;
 }
 
 .logoImage {
-  width: auto; 
-  height: auto; 
+  width: 80px; 
+  height: 76px; 
 }

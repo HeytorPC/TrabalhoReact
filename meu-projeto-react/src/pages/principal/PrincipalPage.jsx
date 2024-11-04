@@ -3,6 +3,7 @@ import styles from './principal.module.css';
 import bannerHome from '/src/assets/bannerHome.jpg';
 import DestinosEmDestaque from '../../components/DestinosEmDestaque/DestinosEmDestaque';
 
+
 function Principal() { 
   return (
     <div className={styles.homeContainer}>
