@@ -3,6 +3,7 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     margin-top: 20px;
+    
 }
 
 .destinationCard {
@@ -10,21 +11,27 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 0px solid #ddd;
-    height: 250px;
+    height: 350px; 
     font-size: 16px;
-    color: #333;
+    color:  #05446e;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    padding: 10px;
 }
 
 .image {
     width: 100%;
-    height: 150px;
+    height: 250px; 
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+     
 }
 
 .preco {
     font-weight: bold;
-    color: #00aaff;
+    color: #05446e;
     margin-top: 10px;
+    font-family: 'Open Sans', normal;
+    
 }

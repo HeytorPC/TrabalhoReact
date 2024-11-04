@@ -1,0 +1,67 @@
+/* Sobre.module.css */
+
+.sobreContainer {
+    padding: 20px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+}
+
+.sobreContainer h1 {
+    font-size: 2rem;
+    color: #0060a0;
+    margin-bottom: 20px;
+}
+
+.sobreContainer p {
+    font-size: 1rem;
+    margin: 10px auto 20px;
+    max-width: 800px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.sobreContainer h2 {
+    font-size: 1.8rem;
+    color: #0060a0;
+    margin: 30px 0 15px;
+}
+
+.administradoresGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.administradorCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border: 0px solid #ddd;
+    border-radius: 8px;
+    height: 250px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.admImage {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.administradorCard h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 5px 0;
+}
+
+.administradorCard p {
+    font-size: 0.9rem;
+    color: #666;
+}
