@@ -1,6 +1,7 @@
 .homeContainer {
-  padding: 20px;
+  /* padding: 20px; */
   text-align: center;
+
   
   
 }
@@ -46,7 +47,9 @@
 .destinos{
   display: flex;
   justify-content: center;
-  padding-top: 10px;
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
+  padding-top: 40px;
+  font-size: 30px;
+  
 }
