@@ -54,6 +54,7 @@
 .logoImage {
   width: 80px; 
   height: 76px; 
+  cursor: pointer;
 }
 
 .loginIcon {

@@ -1,11 +1,12 @@
 import React from 'react';
 import { Routes, Route } from "react-router-dom";
-import Principal from "../pages/principal/PrincipalPage"; //Não pode por chaves nessa importação
+import Principal from "../pages/principal/PrincipalPage"; 
 import Login from "../pages/login/LoginPage";
 import Layout from "../Layout/Layout"; 
 import Carrinho from "../pages/carrinho/Carrinho";
 import {Produtos} from "../pages/produtos/Produtos";
 import {Sobre} from "../pages/sobre/Sobre";
+import {NotFound} from "../pages/notFound/NotFound";
 
 export function Rotas() {
   return (
@@ -18,6 +19,7 @@ export function Rotas() {
         <Route path="produtos" element={<Produtos />} />
         <Route path="sobre" element={<Sobre />} />
       </Route>
+      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 }

@@ -15,7 +15,7 @@ function Navbar() {
   return (
     <header className={styles.header}>
       <div className={styles.logo}>
-        <img src={logoVista} alt="Logo" className={styles.logoImage} />
+        <img src={logoVista} alt="Logo" className={styles.logoImage} onClick={() => handleNavigation('/principal')}/>
       </div>
       <nav className={styles.navbar}>
         <ul>
