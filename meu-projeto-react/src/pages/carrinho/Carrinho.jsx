@@ -12,7 +12,6 @@ function Carrinho() {
     calcularValorTotal,
   } = useContext(carrinhoContext);
 
-  // Recalcula o valor total quando o carrinho é atualizado
   useEffect(() => {
     calcularValorTotal();
   }, [itensCarrinho, calcularValorTotal]);
@@ -30,22 +29,22 @@ function Carrinho() {
             <div key={item.id} className={Styles.item}>
               <span className={Styles.nome}>{item.nome}</span>
               <span className={Styles.quantidade}>Quantidade: {item.quantidade}</span>
-              <span className={Styles.preco}>Preço: R${item.preco.toFixed(2)}</span>
+              <span className={Styles.preco}>Preço: R${item.preco}</span>
               <span className={Styles.subtotal}>
-                Subtotal: R${(item.quantidade * item.preco).toFixed(2)}
+                Subtotal: R${(item.quantidade * item.preco)}
               </span>
               <div className={Styles.Botoes}>
               <button onClick={() => adicionarItens(item)}>
-                <FaPlus /> Adicionar
+                <button /> Adicionar
               </button>
               <button onClick={() => removerItem(item.id)}>
-                <FaMinus /> Remover
+                <button /> Remover
               </button>
               </div>
             </div>
           ))}
           <div className={Styles.total}>
-            <strong>Total: R${valorTotal.toFixed(2)}</strong>
+            <strong>Total: R${valorTotal}</strong>
           </div>
           <button onClick={limparCarrinho} className={Styles.clearButton}>
             Limpar Carrinho

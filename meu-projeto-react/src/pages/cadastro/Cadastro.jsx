@@ -20,6 +20,17 @@ function Cadastro() {
   const [numero, setNumero] = useState('');
   const [complemento, setComplemento] = useState('');
 
+  const handleTextChange = (text) => {
+    if ((/[0-9]/.test(text))){
+      setMensagemErro('Este campo não pode conter números');
+      return;
+    }else{
+      setMensagemErro('');
+    }
+
+    setTexto(text);
+  };
+
   const handleCadastroClick = () => {
     if (cpf.length !== 11) {
       setMensagemErro('O CPF deve conter 11 dígitos');
@@ -35,6 +46,11 @@ function Cadastro() {
     }
     if (senha !== confirmarSenha) {
       setMensagemErro('As senhas não correspondem');
+      return;
+    }
+
+    if (cep.length !== 8) {
+      setMensagemErro('O CPF deve conter 11 dígitos');
       return;
     }
 
@@ -55,9 +71,21 @@ function Cadastro() {
           <input type="text" className={Styles.email} placeholder="Confirme seu email" value={confirmarEmail} onChange={(e) => setConfirmarEmail(e.target.value)} />
           <input type="password" className={Styles.senha} placeholder="Digite sua senha" value={senha} onChange={(e) => setSenha(e.target.value)} />
           <input type="password" className={Styles.senha} placeholder="Confirme sua senha" value={confirmarSenha} onChange={(e) => setConfirmarSenha(e.target.value)} />
-          {mensagemErro && <p className={Styles.error}>{mensagemErro}</p>}
-          <button type="button" className={Styles.Botao} onClick={handleCadastroClick}>Cadastrar</button>
         </div>
+
+        <div className={Styles.Endereco}>
+        <img className={Styles.User} src={User} alt='user' />
+        <h2>Endereço</h2>
+        <input type="text" className={Styles.nome} placeholder="CEP" value={cep} onChange={(e) => setCep(e.target.value)} />
+        <input type="text" className={Styles.nome} placeholder="Rua" value={rua} onChange={(e) => setRua(handleTextChange(e.target.value))} />
+        <input type="text" className={Styles.nome} placeholder="Bairro" value={bairro} onChange={(e) => setBairro(handleTextChange(e.target.value))} />
+        <input type="text" className={Styles.nome} placeholder="Cidade" value={cidade} onChange={(e) => setCidade(handleTextChange(e.target.value))} />
+        <input type="number" className={Styles.nome} placeholder="Número Nº" value={numero} onChange={(e) => setNumero(e.target.value)} />
+        <input type="text" className={Styles.nome} placeholder="Complemento" value={complemento} onChange={(e) => setComplemento(handleTextChange(e.target.value))} />
+        {mensagemErro && <p className={Styles.error}>{mensagemErro}</p>}
+        <button type="button" className={Styles.Botao} onClick={handleCadastroClick}>Cadastrar</button>
+        </div>
+
       </div>
     </div>
   );
