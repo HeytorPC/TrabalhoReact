@@ -57,9 +57,11 @@ export function ProdutosDestinos() {
             {produtosDestinos.map(destino => (
                 <div key={destino.id} className={styles.destinationCard}>
                     <img src={destino.imagem} alt={destino.nome} className={styles.image} />
-                    <p>{destino.nome}</p>
-                    <p className={styles.preco}>{destino.preco}</p>
-                    <img src={carrinhoImg} alt="Carrinho" className={styles.carrinhoImg} />
+                        <p>{destino.nome}</p>
+                        <p className={styles.preco}>{destino.preco}</p>
+                    <button onClick={() => adicionarItens(destino)} className={styles.carrinhoBtn}>
+                        <img src={carrinhoImg} alt="Carrinho" className={styles.carrinhoImg} />
+                    </button>
                 </div>
             ))}
         </div>
