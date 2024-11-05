@@ -82,4 +82,8 @@
 .Botao:hover { 
   background-color:#273c49; 
 }
-  
+.error {
+  color: white;
+  font-size: 0.9em;
+  margin-top: 4px;
+}
