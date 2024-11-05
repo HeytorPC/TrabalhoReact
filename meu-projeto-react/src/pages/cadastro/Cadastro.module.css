@@ -11,7 +11,7 @@ body, html {
 .containerPrincipal {
     background-image: url('https://static.vecteezy.com/system/resources/previews/008/311/935/non_2x/the-illustration-graphic-consists-of-abstract-background-with-a-blue-gradient-dynamic-shapes-composition-eps10-perfect-for-presentation-background-website-landing-page-wallpaper-vector.jpg');
     background-size: cover;
-    min-height: 100vh; 
+    min-height: 110vh; 
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
@@ -29,8 +29,8 @@ body, html {
 
 .User {
     padding-top: 20px;
-    width: 56px;
-    height: 78px;
+    width: 46px;
+    height: 80px;
 }
 
 .Cadastro {
@@ -41,7 +41,7 @@ body, html {
     flex-direction: column;
     color: white;
     width: 600px; 
-    height: 700px;
+    height: 610px;
     background: linear-gradient(#0060a0, #a36ca3);
     font-family: 'Open Sans', sans-serif;
 }
