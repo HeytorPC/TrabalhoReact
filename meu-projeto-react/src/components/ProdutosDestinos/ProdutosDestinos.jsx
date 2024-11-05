@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import styles from './ProdutosDestinos.module.css'; 
 import parisImg from '../../assets/eiffel_tour_0.jpg'; 
 import londresImg from '../../assets/pontos-turisticos-de-londres-blog-ua-br.jpg'; 
@@ -19,6 +19,8 @@ import mexicoImg from '../../assets/mexico.jpg';
 import chileImg from '../../assets/chile.jpg';
 import saopauloImg from '../../assets/saopaulo.jpg';
 import carrinhoImg from '../../assets/carrinho.png';
+import { carrinhoContext } from "../../context/carrinhocontext";
+
 
 
 
@@ -47,6 +49,9 @@ const produtosDestinos = [
 ];
 
 export function ProdutosDestinos() {
+
+    const { adicionarItens, itensCarrinho } = useContext(carrinhoContext)
+
     return (
         <div className={styles.destinosGrid}>
             {produtosDestinos.map(destino => (
