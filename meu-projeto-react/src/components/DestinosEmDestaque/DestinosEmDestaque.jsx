@@ -10,12 +10,12 @@ import carrinhoImg from '../../assets/carrinho.png';
 
 
 const destinos = [
-    { id: 1, nome: "Paris - França", imagem: parisImg, preco: "R$ 3.500" },
-    { id: 2, nome: "Londres - Inglaterra", imagem: londresImg, preco: "R$ 4.200" },
-    { id: 3, nome: "Nova York - Estados Unidos", imagem: novayorkImg, preco: "R$ 5.000" },
-    { id: 4, nome: "Tóquio - Japão", imagem: tokioImg, preco: "R$ 6.000" },
-    { id: 5, nome: "Rio de Janeiro - Brasil", imagem: rioImg, preco: "R$ 3.800" },
-    { id: 6, nome: "Gramado - Brasil", imagem: gramadoImg, preco: "R$ 7.200" }
+    { id: 1, nome: "Paris - França", imagem: parisImg, preco: 3500 },
+    { id: 2, nome: "Londres - Inglaterra", imagem: londresImg, preco: 4200 },
+    { id: 3, nome: "Nova York - Estados Unidos", imagem: novayorkImg, preco: 5000 },
+    { id: 4, nome: "Tóquio - Japão", imagem: tokioImg, preco: 6000 },
+    { id: 5, nome: "Rio de Janeiro - Brasil", imagem: rioImg, preco: 3800},
+    { id: 6, nome: "Gramado - Brasil", imagem: gramadoImg, preco: 7200 }
 ];
 
 function DestinosEmDestaque() {
@@ -25,7 +25,7 @@ function DestinosEmDestaque() {
                 <div key={destino.id} className={styles.destinationCard}>
                     <img src={destino.imagem} alt={destino.nome} className={styles.image} />
                     <p>{destino.nome}</p>      
-                    <p className={styles.preco}>{destino.preco}</p>
+                    <p className={styles.preco}>R$ {destino.preco}</p>
                     <img src={carrinhoImg} alt="Carrinho" className={styles.carrinhoImg} />
                 </div>
             ))}
