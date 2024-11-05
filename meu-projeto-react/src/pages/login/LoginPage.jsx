@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import Styles from './Login.module.css';
-import User from '/src/assets/User.png';
+import User from '/src/assets/user_login_man-512.png';
 
 function Login() {
   const navigate = useNavigate();

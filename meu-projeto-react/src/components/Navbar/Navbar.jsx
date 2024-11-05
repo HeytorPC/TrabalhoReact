@@ -29,7 +29,6 @@ function Navbar() {
         </ul>
       </nav>
       <div className={styles.searchContainer}>
-        <input type="text" placeholder="Buscar..." />
       </div>
     </header>
   );
