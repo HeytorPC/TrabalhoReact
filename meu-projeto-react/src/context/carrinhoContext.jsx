@@ -7,29 +7,34 @@ const CarrinhoProvider = (props) => {
     const [itensCarrinho, setItensCarrinho] = useState([]);
     const [valorTotal, setValorTotal] = useState(0);
 
-    function adicionarItens(novoItem){
-        const produtoExistente = itensCarrinho.find(produto=>produto.id == novoProduto.id);
-
-        var novosItens;
+    function adicionarItens(novoItem) {
+        const produtoExistente = itensCarrinho.find(produto => produto.id === novoItem.id);
+        let novosItens;
         
-        if(produtoExistente){
-            novoItem = itensCarrinho.map(item => {
-                if(item.id == novoProduto.id){
-                    return{...item, quantidade: item.quantidade +1 }
+        if (produtoExistente) {
+            novosItens = itensCarrinho.map(item => {
+                if (item.id === novoItem.id) {
+                    return { ...item, quantidade: item.quantidade + 1 };
                 }
                 return item;
             });
-        }else{ 
-            novoItems = [... itensCarrinho, {... novoProduto, quantidade: 1}]
+        } else {
+            novosItens = [...itensCarrinho, { ...novoItem, quantidade: 1 }];
         }
         
-        setItensCarrinho(novosItens )
+        setItensCarrinho(novosItens);
     }
 
 
-    function removerItem(id){
-        const novoItem = itensCarrinho.filter(item => item.id === id);
-        setItensCarrinho(novoItem);
+    function removerItem(id) {
+        const novosItens = itensCarrinho.map(item => {
+            if (item.id === id) {
+                return { ...item, quantidade: item.quantidade - 1 };
+            }
+            return item;
+        }).filter(item => item.quantidade > 0); // Remove itens com quantidade zero
+    
+        setItensCarrinho(novosItens);
     }
 
     function limparCarrinho(){
