@@ -9,15 +9,19 @@
     display: flex;
     flex-direction: column;
     align-items: center; 
-    justify-content: center; }
+    justify-content: center;
+    flex-direction:column;
+ }
     
 .MensagemDeErro{
     color: black;
     display: flex;
+    margin-bottom: 18px;
 
 }
 .container{
     justify-content: center;
+    flex-direction: column;
     padding-top: 200px;
     display: flex;
     font-weight: bold;
@@ -25,7 +29,14 @@
 }
 .voltar{
     justify-content: center;
-    padding-top: 100px;
+    padding-top: 80px;
     display: flex;
     border-radius: 10px; 
+}
+.Sad{
+    width: 300px;
+    height:300px;
+    justify-content: start;
+    align-items: flex-start;
+    margin-left: 190px;
 }
