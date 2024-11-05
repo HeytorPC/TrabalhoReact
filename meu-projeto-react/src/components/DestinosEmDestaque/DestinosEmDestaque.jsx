@@ -6,6 +6,8 @@ import novayorkImg from '../../assets/morar-em-nova-york.jpg';
 import tokioImg from '../../assets/tokio.jpg';
 import rioImg from '../../assets/rio.jpg';
 import gramadoImg from '../../assets/gramado.png';
+import carrinhoImg from '../../assets/carrinho.png';
+
 
 const destinos = [
     { id: 1, nome: "Paris - França", imagem: parisImg, preco: "R$ 3.500" },
@@ -22,8 +24,9 @@ function DestinosEmDestaque() {
             {destinos.map(destino => (
                 <div key={destino.id} className={styles.destinationCard}>
                     <img src={destino.imagem} alt={destino.nome} className={styles.image} />
-                    <p>{destino.nome}</p>
+                    <p>{destino.nome}</p>      
                     <p className={styles.preco}>{destino.preco}</p>
+                    <img src={carrinhoImg} alt="Carrinho" className={styles.carrinhoImg} />
                 </div>
             ))}
         </div>

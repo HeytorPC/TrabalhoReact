@@ -25,7 +25,12 @@
     object-fit: cover;
     border-radius: 10px;
     margin-bottom: 10px;
+    transition: transform 0.3s ease; 
+    cursor: pointer;
      
+}
+.destinationCard:hover .image {
+    transform: scale(1.1); 
 }
 
 .preco {
@@ -35,3 +40,7 @@
     font-family: 'Open Sans', normal;
     
 }
+.carrinhoImg{
+    width: 40px;
+    height: 40px;
+  }

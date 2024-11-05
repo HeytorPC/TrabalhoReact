@@ -62,18 +62,21 @@
     margin-bottom: 15px; 
     font-family: 'Open Sans', sans-serif;
   }
-.Botao{ width: 80%; 
+.Botao{
+    width: 80%; 
     padding: 10px; 
-    margin-top: 15px; /* Espaçamento acima do botão */ 
+    margin-top: 15px; 
     border: none; 
     border-radius: 20px; 
     font-size: 16px; 
-    background-color: #4b7a9c; /* Cor de fundo do botão */ 
+    background-color: #4b7a9c;
     color: white; 
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     cursor: pointer;
-     transition: background-color 0.3s; } 
+    transition: background-color 0.3s; } 
      
-.Botao:hover { background-color:#273c49; /* Cor de fundo ao passar o mouse */ }
+.Botao:hover { 
+  background-color:#273c49; 
+}
   

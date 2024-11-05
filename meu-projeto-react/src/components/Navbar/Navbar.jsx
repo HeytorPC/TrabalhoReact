@@ -1,10 +1,17 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import styles from './Navbar.module.css';
 import logoVista from '../../assets/logoVista.png';
 import loginIcon from '../../assets/user_login_man-512.png';
-import carrinhoIcon from '../../assets/2611181.png'
+import carrinhoIcon from '../../assets/2611181.png';
 
 function Navbar() {
+  const navigate = useNavigate();
+
+  const handleNavigation = (path) => {
+    navigate(path);
+  };
+
   return (
     <header className={styles.header}>
       <div className={styles.logo}>
@@ -12,13 +19,11 @@ function Navbar() {
       </div>
       <nav className={styles.navbar}>
         <ul>
-          <li>Home</li>
-          <li>Sobre</li>
-          <li>Produtos</li>
-          {/* <li>Carrinho</li> */}
-          <img src={carrinhoIcon} alt="Login" className={styles.CarrinhoIcon} />
-          {/* <li>Login</li> */}
-          <img src={loginIcon} alt="Login" className={styles.loginIcon} />
+          <li onClick={() => handleNavigation('/')}>Home</li>
+          <li onClick={() => handleNavigation('/sobre')}>Sobre</li>
+          <li onClick={() => handleNavigation('/produtos')}>Produtos</li>
+          <img src={carrinhoIcon} alt="Carrinho" className={styles.CarrinhoIcon} onClick={() => handleNavigation('/carrinho')} />
+          <img src={loginIcon} alt="Login" className={styles.loginIcon} onClick={() => handleNavigation('/login')} />
         </ul>
       </nav>
       <div className={styles.searchContainer}>

@@ -24,7 +24,8 @@
   font-weight: bold;
   width: 100%;
   justify-content: center;
-}
+  cursor: pointer;
+} 
 
 .searchContainer {
   display: flex;
