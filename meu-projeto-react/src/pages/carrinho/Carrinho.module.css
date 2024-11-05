@@ -5,7 +5,7 @@
 }
 
 .fundo{
-  background-color: #0060a0;
+  background:linear-gradient(#023c63,#36273d);
   background-size: cover;
   min-height: 100vh;
   background-position: center;
