@@ -21,11 +21,13 @@ body, html {
 
 .container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-start;
     padding-top: 100px;
     flex-grow: 1; 
+    padding: 20PX;  
 }
+
 
 .User {
     padding-top: 20px;
@@ -86,3 +88,12 @@ footer {
     width: 100%;
     position: relative; 
 }
+
+.error {
+    color:white;
+    font-size: 0.9em;
+    margin-top: 4px;
+  }
+  
+
+
