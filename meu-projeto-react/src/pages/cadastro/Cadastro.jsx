@@ -1,6 +1,6 @@
 import React from 'react';
 import Styles from './Cadastro.module.css';
-import User from '/src/assets/User.png';
+import User from '/src/assets/cadastro.png';
 
 function Cadastro(Props) {
   return (
@@ -9,7 +9,7 @@ function Cadastro(Props) {
       <div className={Styles.container}>
         <div className={Styles.Cadastro}>
           <img className={Styles.User} src={User} alt='user' />
-          <h2>Sejam bem-vindos</h2>
+          <h2>Cadastro</h2>
           <input type="text" id="nome" className={Styles.nome} placeholder="Digite seu nome" />
           <input type="text" id="CPF" className={Styles.email} placeholder="Digite seu CPF" />
           <input type="text" id="telefone" className={Styles.email} placeholder="Digite seu telefone" />
