@@ -2,7 +2,7 @@ import React, { useContext, useEffect } from 'react';
 import { carrinhoContext } from '../../context/carrinhocontext';
 import Styles from '../carrinho/Carrinho.module.css';
 
-function Carrinho() {
+export function Carrinho() {
   const {
     itensCarrinho,
     valorTotal,
@@ -57,4 +57,4 @@ function Carrinho() {
   );
 }
 
-export default Carrinho;
+
