@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Styles from './Cadastro.module.css';
 import User from '/src/assets/cadastro.png';
 
-function Cadastro() {
+export function Cadastro() {
   const [nome, setNome] = useState('');
   const [cpf, setCpf] = useState('');
   const [telefone, setTelefone] = useState('');
@@ -91,4 +91,4 @@ function Cadastro() {
   );
 }
 
-export default Cadastro;
+

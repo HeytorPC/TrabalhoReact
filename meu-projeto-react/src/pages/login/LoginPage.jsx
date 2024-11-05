@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import Styles from './Login.module.css';
 import User from '/src/assets/user_login_man-512.png';
 
-function Login() {
+export function Login() {
   const navigate = useNavigate();
   const [email, setEmail] = useState('');
   const [senha, setSenha] = useState('');
@@ -55,4 +55,4 @@ function Login() {
   );
 }
 
-export default Login;
+

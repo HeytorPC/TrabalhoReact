@@ -4,7 +4,7 @@ import bannerHome from '/src/assets/bannerHome.jpg';
 import DestinosEmDestaque from '../../components/DestinosEmDestaque/DestinosEmDestaque';
 
 
-function Principal() { 
+export function Principal() { 
   return (
     <div className={styles.homeContainer}>
       <div className={styles.banner}>
@@ -16,4 +16,4 @@ function Principal() {
   );
 }
 
-export default Principal; 
+
