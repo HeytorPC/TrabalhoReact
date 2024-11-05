@@ -48,6 +48,19 @@ body, html {
     font-family: 'Open Sans', sans-serif;
 }
 
+.Endereco {
+    padding: 30px;
+    border-radius: 13px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 600px; 
+    height: 610px;
+    background: linear-gradient(#0060a0, #a36ca3);
+    font-family: 'Open Sans', sans-serif;
+}
+
 h2 {
     margin-bottom: 15px; 
 }
