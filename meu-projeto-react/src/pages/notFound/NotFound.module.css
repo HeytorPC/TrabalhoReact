@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 .containerPrincipal { 
-    background-color: #333; 
+    background-color: #4c4949; 
     min-height: 100vh; 
     display: flex;
     flex-direction: column;

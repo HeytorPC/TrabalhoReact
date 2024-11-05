@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import Styles from './NotFound.module.css';
+import { Botao } from "../../components/Botao/Botao";
 
 export function NotFound() {
   const navigate = useNavigate(); 
@@ -15,7 +16,7 @@ export function NotFound() {
         </div>
       </div>
       <div className={Styles.voltar}>
-        <button onClick={() => handleNavigation('/principal')}>Voltar a página Inicial</button>
+      <Botao onClick={() => handleNavigation('/principal')}>Voltar a página Inicial</Botao>
       </div>
       </div>
     </>
