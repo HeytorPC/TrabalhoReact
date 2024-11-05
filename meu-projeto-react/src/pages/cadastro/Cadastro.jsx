@@ -20,15 +20,14 @@ export function Cadastro() {
   const [numero, setNumero] = useState('');
   const [complemento, setComplemento] = useState('');
 
-  const handleTextChange = (text) => {
-    if ((/[0-9]/.test(text))){
+  const handleTextChange = (text,setTexto) => {
+    if (/[0-9]/.test(text)){
       setMensagemErro('Este campo não pode conter números');
       return;
     }else{
       setMensagemErro('');
+      setTexto(text);
     }
-
-    setTexto(text);
   };
 
   const handleCadastroClick = () => {
@@ -77,11 +76,11 @@ export function Cadastro() {
         <img className={Styles.User} src={User} alt='user' />
         <h2>Endereço</h2>
         <input type="text" className={Styles.nome} placeholder="CEP" value={cep} onChange={(e) => setCep(e.target.value)} />
-        <input type="text" className={Styles.nome} placeholder="Rua" value={rua} onChange={(e) => setRua(handleTextChange(e.target.value))} />
-        <input type="text" className={Styles.nome} placeholder="Bairro" value={bairro} onChange={(e) => setBairro(handleTextChange(e.target.value))} />
-        <input type="text" className={Styles.nome} placeholder="Cidade" value={cidade} onChange={(e) => setCidade(handleTextChange(e.target.value))} />
-        <input type="number" className={Styles.nome} placeholder="Número Nº" value={numero} onChange={(e) => setNumero(e.target.value)} />
-        <input type="text" className={Styles.nome} placeholder="Complemento" value={complemento} onChange={(e) => setComplemento(handleTextChange(e.target.value))} />
+        <input type="text" className={Styles.nome} placeholder="Rua" value={rua} onChange={(e) => handleTextChange(e.target.value, setRua)} />
+        <input type="text" className={Styles.nome} placeholder="Bairro" value={bairro} onChange={(e) => handleTextChange(e.target.value, setBairro)} />
+        <input type="text" className={Styles.nome} placeholder="Cidade" value={cidade} onChange={(e) => handleTextChange(e.target.value, setCidade)} />
+        <input type="number" className={Styles.nome} placeholder="Número Nº" value={numero} onChange={(e) => handleTextChange(e.target.value, setNumero)} />
+        <input type="text" className={Styles.nome} placeholder="Complemento" value={complemento} onChange={(e) => handleTextChange(e.target.value, setComplemento)} />
         {mensagemErro && <p className={Styles.error}>{mensagemErro}</p>}
         <button type="button" className={Styles.Botao} onClick={handleCadastroClick}>Cadastrar</button>
         </div>
@@ -90,5 +89,7 @@ export function Cadastro() {
     </div>
   );
 }
+
+
 
 
