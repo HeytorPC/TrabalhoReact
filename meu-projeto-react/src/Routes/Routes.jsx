@@ -4,8 +4,8 @@ import Principal from "../pages/principal/PrincipalPage"; //Não pode por chaves
 import Login from "../pages/login/LoginPage";
 import Layout from "../Layout/Layout"; 
 import Carrinho from "../pages/carrinho/Carrinho";
-import Produtos from "../pages/produtos/Produtos";
-import Sobre from "../pages/sobre/Sobre";
+import {Produtos} from "../pages/produtos/Produtos";
+import {Sobre} from "../pages/sobre/Sobre";
 
 export function Rotas() {
   return (

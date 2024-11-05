@@ -4,7 +4,7 @@ const carrinhoContext = createContext();
 
 const CarrinhoProvider = (props) => {
 
-    const [itensCarrinho, setItensCarrinho] = useState(listaItensCarrinho);
+    const [itensCarrinho, setItensCarrinho] = useState([]);
     const [valorTotal, setValorTotal] = useState(0);
 
     function adicionarItens(novoItem){

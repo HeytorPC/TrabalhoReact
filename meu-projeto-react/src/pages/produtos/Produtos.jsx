@@ -1,8 +1,9 @@
 import React from 'react';
 import styles from './Produtos.module.css';
-import ProdutosDestinos from '../../components/ProdutosDestinos/ProdutosDestinos';
+import{ProdutosDestinos} from '../../components/ProdutosDestinos/ProdutosDestinos';
 
-function Produtos() {
+
+export function Produtos() {
   return (
 
     <div className={styles.produtosContainer}>

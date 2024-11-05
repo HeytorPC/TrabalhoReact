@@ -16,7 +16,7 @@ const administradores = [
   { id: 6, nome: 'Julia Henriques', imagem: adm6, descricao: 'Gosto de API' },
 ];
 
-function Sobre() {
+export function Sobre() {
   return (
     <div className={styles.sobreContainer}>
       <h1>Sobre Nós</h1>
@@ -39,4 +39,4 @@ function Sobre() {
   );
 }
 
-export default Sobre;
+ Sobre;

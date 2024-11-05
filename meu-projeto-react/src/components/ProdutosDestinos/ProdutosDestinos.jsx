@@ -46,7 +46,7 @@ const produtosDestinos = [
 
 ];
 
-function ProdutosDestinos() {
+export function ProdutosDestinos() {
     return (
         <div className={styles.destinosGrid}>
             {produtosDestinos.map(destino => (
@@ -61,6 +61,5 @@ function ProdutosDestinos() {
     );
 }
 
-export default ProdutosDestinos;
 
 
