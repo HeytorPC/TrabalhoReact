@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import styles from './DestinosEmDestaque.module.css'; 
 import parisImg from '../../assets/eiffel_tour_0.jpg';
 import londresImg from '../../assets/pontos-turisticos-de-londres-blog-ua-br.jpg';
@@ -7,7 +7,7 @@ import tokioImg from '../../assets/tokio.jpg';
 import rioImg from '../../assets/rio.jpg';
 import gramadoImg from '../../assets/gramado.png';
 import carrinhoImg from '../../assets/carrinho.png';
-
+import { carrinhoContext } from '../../context/carrinhocontext';
 
 const destinos = [
     { id: 1, nome: "Paris - França", imagem: parisImg, preco: 3500 },
@@ -19,6 +19,8 @@ const destinos = [
 ];
 
 function DestinosEmDestaque() {
+    const { adicionarItens } = useContext(carrinhoContext);
+
     return (
         <div className={styles.destinosGrid}>
             {destinos.map(destino => (
@@ -26,7 +28,9 @@ function DestinosEmDestaque() {
                     <img src={destino.imagem} alt={destino.nome} className={styles.image} />
                     <p>{destino.nome}</p>      
                     <p className={styles.preco}>R$ {destino.preco}</p>
-                    <img src={carrinhoImg} alt="Carrinho" className={styles.carrinhoImg} />
+                    <button onClick={() => adicionarItens(destino)} className={styles.carrinhoButton}>
+                            <img src={carrinhoImg} alt="Adicionar ao Carrinho" className={styles.carrinhoImg} />
+                    </button>
                 </div>
             ))}
         </div>

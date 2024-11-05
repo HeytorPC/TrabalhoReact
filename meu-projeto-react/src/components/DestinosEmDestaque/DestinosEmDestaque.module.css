@@ -38,10 +38,21 @@
     color: #05446e;
     margin-top: 10px;
     font-family: 'Open Sans', normal;
-    
+   
 }
+
+.carrinhoButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
 .carrinhoImg{
     width: 30px;
     height: 30px;
+    border: none;
+    outline: none;
+    box-shadow: none;
   }
 
