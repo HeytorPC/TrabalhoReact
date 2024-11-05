@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%; 
+}
+
+.containerPrincipal {
+    background-image: url('https://static.vecteezy.com/system/resources/previews/008/311/935/non_2x/the-illustration-graphic-consists-of-abstract-background-with-a-blue-gradient-dynamic-shapes-composition-eps10-perfect-for-presentation-background-website-landing-page-wallpaper-vector.jpg');
+    background-size: cover;
+    min-height: 100vh; 
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 100px;
+    flex-grow: 1; 
+}
+
+.User {
+    padding-top: 20px;
+    width: 56px;
+    height: 78px;
+}
+
+.Cadastro {
+    padding: 30px;
+    border-radius: 13px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 600px; 
+    height: 700px;
+    background: linear-gradient(#0060a0, #a36ca3);
+    font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+    margin-bottom: 15px; 
+}
+
+input { 
+    width: 80%; 
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px; 
+    font-size: 16px;
+}
+
+.Botao {
+    width: 80%; 
+    padding: 10px; 
+    margin-top: 15px; 
+    border: none; 
+    border-radius: 20px; 
+    font-size: 16px; 
+    background-color: #4b7a9c;
+    color: white; 
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s; 
+}
+
+.Botao:hover { 
+    background-color: #273c49; 
+}
+
+footer {
+    background-color: #004080; 
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
+    position: relative; 
+}

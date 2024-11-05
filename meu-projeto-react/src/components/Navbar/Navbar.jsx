@@ -4,6 +4,7 @@ import styles from './Navbar.module.css';
 import logoVista from '../../assets/logoVista.png';
 import loginIcon from '../../assets/user_login_man-512.png';
 import carrinhoIcon from '../../assets/2611181.png';
+import cadastroIcon from '../../assets/cadastro.png'
 
 function Navbar() {
   const navigate = useNavigate();
@@ -24,6 +25,7 @@ function Navbar() {
           <li onClick={() => handleNavigation('/produtos')}>Produtos</li>
           <img src={carrinhoIcon} alt="Carrinho" className={styles.CarrinhoIcon} onClick={() => handleNavigation('/carrinho')} />
           <img src={loginIcon} alt="Login" className={styles.loginIcon} onClick={() => handleNavigation('/login')} />
+          <img src={cadastroIcon} alt="Cadastro" className={styles.cadastroIcon} onClick={() => handleNavigation('/cadastro')} />
         </ul>
       </nav>
       <div className={styles.searchContainer}>

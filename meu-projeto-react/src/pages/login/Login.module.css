@@ -38,7 +38,7 @@
     flex-direction: column;
     color: white;
     width: 600px; 
-    height: 530px;
+    height: 500px;
     background: linear-gradient(#0060a0, #a36ca3);
     font-family: 'Open Sans', sans-serif;
   }
@@ -55,11 +55,7 @@
      border-radius: 20px; 
      font-size: 16px;
   }
-  .nome {
-    margin-bottom: 15px; 
-    font-family: 'Open Sans', sans-serif;
-  }
-  
+
   .email {
     margin-bottom: 15px; 
     font-family: 'Open Sans', sans-serif;

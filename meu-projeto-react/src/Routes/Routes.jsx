@@ -7,6 +7,7 @@ import Carrinho from "../pages/carrinho/Carrinho";
 import {Produtos} from "../pages/produtos/Produtos";
 import {Sobre} from "../pages/sobre/Sobre";
 import {NotFound} from "../pages/notFound/NotFound";
+import Cadastro from '../pages/cadastro/Cadastro';
 
 export function Rotas() {
   return (
@@ -18,6 +19,7 @@ export function Rotas() {
         <Route path="carrinho" element={<Carrinho/>} />
         <Route path="produtos" element={<Produtos />} />
         <Route path="sobre" element={<Sobre />} />
+        <Route path="cadastro" element={<Cadastro />} />
       </Route>
       <Route path="*" element={<NotFound />} />
     </Routes>
