@@ -27,24 +27,24 @@ import { carrinhoContext } from "../../context/carrinhocontext";
 
 const produtosDestinos = [
 
-    { id: 1, nome: "Paris - França", imagem: parisImg, preco: "R$ 6.000" },
-    { id: 2, nome: "Londres - Inglaterra", imagem: londresImg, preco: "R$ 5.500" },
-    { id: 3, nome: "Nova York - Estados Unidos", imagem: novayorkImg, preco: "R$ 8.000" },
-    { id: 4, nome: "Tóquio - Japão", imagem: tokioImg, preco: "R$ 9.000" },
-    { id: 5, nome: "Rio de Janeiro - Brasil", imagem: rioImg, preco: "R$ 4.500" },
-    { id: 6, nome: "Gramado - Brasil", imagem: gramadoImg, preco: "R$ 3.500" },
-    { id: 7, nome: "Capadócia - Turquia", imagem: capadociaImg, preco: "R$ 6.500" },
-    { id: 8, nome: "Doha - Catar", imagem: catarImg, preco: "R$ 7.000" },
-    { id: 9, nome: "Cairo - Egito", imagem: egitoImg, preco: "R$ 6.000" },
-    { id: 10, nome: "Madrid - Espanha", imagem: espanhaImg, preco: "R$ 5.800" },
-    { id: 11, nome: "Santorini - Grécia", imagem: greciaImg, preco: "R$ 7.500" },
-    { id: 12, nome: "Roma - Itália", imagem: italiaImg, preco: "R$ 7.000" },
-    { id: 13, nome: "Machu Picchu - Peru", imagem: peruImg, preco: "R$ 7.800" },
-    { id: 14, nome: "Berna - Suíça", imagem: suicaImg, preco: "R$ 8.500" },
-    { id: 15, nome: "Malé - Maldivas", imagem: maldivasImg, preco: "R$ 10.000" },
-    { id: 16, nome: "Acapulco - México", imagem: mexicoImg, preco: "R$ 4.000" },
-    { id: 17, nome: "Santiago - Chile", imagem: chileImg, preco: "R$ 5.000" },
-    { id: 18, nome: "São Paulo - Brasil", imagem: saopauloImg, preco: "R$ 3.000" }
+    { id: 1, nome: "Paris - França", imagem: parisImg, preco: 6000 },
+    { id: 2, nome: "Londres - Inglaterra", imagem: londresImg, preco: 5500 },
+    { id: 3, nome: "Nova York - Estados Unidos", imagem: novayorkImg, preco: 8000 },
+    { id: 4, nome: "Tóquio - Japão", imagem: tokioImg, preco: 9000 },
+    { id: 5, nome: "Rio de Janeiro - Brasil", imagem: rioImg, preco: 4500 },
+    { id: 6, nome: "Gramado - Brasil", imagem: gramadoImg, preco:  3500 },
+    { id: 7, nome: "Capadócia - Turquia", imagem: capadociaImg, preco: 6500 },
+    { id: 8, nome: "Doha - Catar", imagem: catarImg, preco: 7000 },
+    { id: 9, nome: "Cairo - Egito", imagem: egitoImg, preco: 6000 },
+    { id: 10, nome: "Madrid - Espanha", imagem: espanhaImg, preco: 5800 },
+    { id: 11, nome: "Santorini - Grécia", imagem: greciaImg, preco: 7500 },
+    { id: 12, nome: "Roma - Itália", imagem: italiaImg, preco: 7000 },
+    { id: 13, nome: "Machu Picchu - Peru", imagem: peruImg, preco: 7800 },
+    { id: 14, nome: "Berna - Suíça", imagem: suicaImg, preco: 8500 },
+    { id: 15, nome: "Malé - Maldivas", imagem: maldivasImg, preco: 10.000 },
+    { id: 16, nome: "Acapulco - México", imagem: mexicoImg, preco: 4000 },
+    { id: 17, nome: "Santiago - Chile", imagem: chileImg, preco: 5000 },
+    { id: 18, nome: "São Paulo - Brasil", imagem: saopauloImg, preco: 3000 }
 
 ];
 

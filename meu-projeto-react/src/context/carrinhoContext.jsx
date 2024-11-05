@@ -44,7 +44,7 @@ const CarrinhoProvider = (props) => {
     function calcularValorTotal(){
         let total = 0;
         itensCarrinho.forEach((item)=>{
-            total = item.quantidade * item.preco;
+            total += item.quantidade * item.preco;
         });
 
         setValorTotal(total)
