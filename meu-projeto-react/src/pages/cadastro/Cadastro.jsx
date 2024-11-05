@@ -79,7 +79,7 @@ export function Cadastro() {
         <input type="text" className={Styles.nome} placeholder="Rua" value={rua} onChange={(e) => handleTextChange(e.target.value, setRua)} />
         <input type="text" className={Styles.nome} placeholder="Bairro" value={bairro} onChange={(e) => handleTextChange(e.target.value, setBairro)} />
         <input type="text" className={Styles.nome} placeholder="Cidade" value={cidade} onChange={(e) => handleTextChange(e.target.value, setCidade)} />
-        <input type="number" className={Styles.nome} placeholder="Número Nº" value={numero} onChange={(e) => handleTextChange(e.target.value, setNumero)} />
+        <input type="number" className={Styles.nome} placeholder="Número Nº" value={numero} onChange={(e) => setNumero(e.target.value)} />
         <input type="text" className={Styles.nome} placeholder="Complemento" value={complemento} onChange={(e) => handleTextChange(e.target.value, setComplemento)} />
         {mensagemErro && <p className={Styles.error}>{mensagemErro}</p>}
         <button type="button" className={Styles.Botao} onClick={handleCadastroClick}>Cadastrar</button>
