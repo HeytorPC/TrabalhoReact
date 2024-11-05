@@ -1,6 +1,7 @@
 import React, { useContext, useEffect } from 'react';
 import { carrinhoContext } from '../../context/carrinhocontext';
 import Styles from '../carrinho/Carrinho.module.css';
+import carrinhoIcon from '../../assets/2611181.png';
 
 export function Carrinho() {
   const {
@@ -17,10 +18,11 @@ export function Carrinho() {
   }, [itensCarrinho, calcularValorTotal]);
 
   return (
+    
     <div className={Styles.fundo}>
     <div className={Styles.carrinhoContainer}>
+     <img src={carrinhoIcon} alt="Carrinho" className={Styles.imagem}></img>
       <h1>Carrinho de Compras</h1>
-
       {itensCarrinho.length === 0 ? (
         <p className={Styles.emptyMessage}>Seu carrinho está vazio.</p>
       ) : (
@@ -34,10 +36,10 @@ export function Carrinho() {
                 Subtotal: R${(item.quantidade * item.preco)}
               </span>
               <div className={Styles.Botoes}>
-              <button onClick={() => adicionarItens(item)}>
+              <button onClick={() => adicionarItens(item)} className={Styles.adicionar}>
                 <button /> Adicionar
               </button>
-              <button onClick={() => removerItem(item.id)}>
+              <button onClick={() => removerItem(item.id)}className={Styles.remover}>
                 <button /> Remover
               </button>
               </div>

@@ -1,45 +1,108 @@
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.fundo{
-  background:linear-gradient(#023c63,#36273d);
+.fundo {
+  background: linear-gradient(#023c63, #36273d);
   background-size: cover;
   min-height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
-  display: flex; 
-  align-items: center; 
+  display: flex;
+  align-items: center;
   justify-content: center;
   color: white;
   font-family: 'Open Sans', sans-serif;
   text-wrap: nowrap;
+  flex-direction: column;
 }
 
-.nome{
-  color: white;
-  align-items: center;
-  display: flex;
-  justify-content: center;
 
+.carrinhoContainer {
+  text-align: center;
+  width: 80%;
+  max-width: 800px;
+  padding: 20px;
+  border-radius: 10px;
 }
-.quantidade{
-  color: white;
-  align-items: center;
+
+
+.imagem {
+  height: 100px;
+  width: 100px;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+
+.itensLista {
+  margin-bottom: 30px;
+}
+
+
+.item {
+  margin-bottom: 20px;
+}
+
+
+.Botoes {
   display: flex;
   justify-content: center;
+  gap: 15px; 
+  margin-bottom: 30px; 
+  
 }
-.preco{
+
+.adicionar, .remover, .clearButton {
+  width: 40%;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  background-color: #4b7a9c;
   color: white;
-  align-items: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.adicionar:hover, .remover:hover,.clearButton:hover {
+  background-color: #3a6071;
+}
+
+
+.clearButton{
+  width: 60%;
+  margin-top: 15px;
+}
+
+.nome, .quantidade, .preco, .subtotal {
+  color: white;
   display: flex;
   justify-content: center;
-}
-.subtotal{
-  color: white;
   align-items: center;
-  display: flex;
-  justify-content: center;
+  margin-bottom: 10px; 
+}
+
+.total {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.emptyMessage {
+  font-size: 1.2rem;
+  color: white;
+  text-align: center;
+  margin-top: 20px;
 }
