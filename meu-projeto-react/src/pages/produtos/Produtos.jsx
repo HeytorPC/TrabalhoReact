@@ -8,7 +8,7 @@ export function Produtos() {
 
     <div className={styles.produtosContainer}>
 
-    <h1 className={styles.produtos}>Pacotes de Viagens</h1>
+    <h1 className={styles.produtos}>Pacotes de Viagens!!</h1>
     <ProdutosDestinos/>
     </div>
   );

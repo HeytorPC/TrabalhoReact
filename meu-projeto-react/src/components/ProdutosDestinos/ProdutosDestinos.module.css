@@ -13,7 +13,7 @@
     justify-content: center;
     height: 350px; 
     font-size: 16px;
-    color:  #05446e;
+    color:#043352;
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     padding: 10px;
@@ -35,8 +35,7 @@
 
 .preco {
     font-weight: bold;
-    color: #05446e;
-    margin-top: 10px;
+    color:#043352;
     font-family: 'Open Sans', normal;
 
 }
@@ -49,6 +48,10 @@
   }
   
   .carrinhoImg {
-    width: 30px;
-    height: 30px;
+    width: 49px;
+    height: 40px;
+    transition: transform 0.3s;
   }
+  button:hover .carrinhoImg { 
+    transform: scale(1.1); 
+ }

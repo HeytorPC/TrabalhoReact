@@ -10,7 +10,7 @@ export function Principal() {
       <div className={styles.banner}>
         <img src={bannerHome} alt="bannerHome" className={styles.bannerHome} />
       </div>
-      <h2 className={styles.destinos}>Destinos em Destaque</h2>
+      <h2 className={styles.destinos}>Destinos em Destaque!</h2>
       <DestinosEmDestaque />
     </div>
   );
