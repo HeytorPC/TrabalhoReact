@@ -7,7 +7,7 @@ import tokioImg from '../../assets/tokio.jpg';
 import rioImg from '../../assets/rio.jpg';
 import gramadoImg from '../../assets/gramado.png';
 import carrinhoImg from '../../assets/carrinho.png';
-import { carrinhoContext } from '../../context/carrinhocontext';
+import { carrinhoContext } from '../../context/carrinhoContext';
 
 const destinos = [
     { id: 1, nome: "Paris - França", imagem: parisImg, preco: 3500, descricao: "Explore a Cidade Luz e seus monumentos icônicos." },

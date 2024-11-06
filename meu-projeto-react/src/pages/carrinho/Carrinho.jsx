@@ -1,5 +1,5 @@
 import React, { useContext, useEffect } from 'react';
-import { carrinhoContext } from '../../context/carrinhocontext';
+import { carrinhoContext } from '../../context/carrinhoContext';
 import Styles from '../carrinho/Carrinho.module.css';
 import carrinhoIcon from '../../assets/2611181.png';
 

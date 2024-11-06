@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Rotas } from './Routes/Routes'; 
-import { CarrinhoProvider } from './context/carrinhocontext';
+import { CarrinhoProvider } from './context/carrinhoContext';
 import Navbar from './components/Navbar/Navbar';
 
 function App() {

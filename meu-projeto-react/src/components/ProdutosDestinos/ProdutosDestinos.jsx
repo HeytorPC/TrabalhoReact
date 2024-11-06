@@ -19,7 +19,7 @@ import mexicoImg from '../../assets/mexico.jpg';
 import chileImg from '../../assets/chile.jpg';
 import saopauloImg from '../../assets/saopaulo.jpg';
 import carrinhoImg from '../../assets/carrinho.png';
-import { carrinhoContext } from "../../context/carrinhocontext";
+import { carrinhoContext } from "../../context/carrinhoContext";
 
 const produtosDestinos = [
     { id: 1, nome: "Paris - França", imagem: parisImg, preco: 3500, descricao: "Explore a Cidade Luz e seus monumentos icônicos." },
