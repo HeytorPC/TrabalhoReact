@@ -32,7 +32,7 @@ const CarrinhoProvider = (props) => {
                 return { ...item, quantidade: item.quantidade - 1 };
             }
             return item;
-        }).filter(item => item.quantidade > 0); // Remove itens com quantidade zero
+        }).filter(item => item.quantidade > 0);
     
         setItensCarrinho(novosItens);
     }
