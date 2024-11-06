@@ -19,6 +19,7 @@ export function Carrinho() {
 
   const handleFinalizarCompra = () => {
     alert("Compra finalizada com sucesso!");
+    limparCarrinho();
   };
 
   return (
@@ -54,7 +55,7 @@ export function Carrinho() {
             <button onClick={limparCarrinho} className={Styles.clearButton}>
               Limpar Carrinho
             </button>
-            <button onClick={limparCarrinho} className={Styles.finalizarButton}>
+            <button onClick={handleFinalizarCompra} className={Styles.finalizarButton}>
               Finalizar Compra
             </button>
           </div>
