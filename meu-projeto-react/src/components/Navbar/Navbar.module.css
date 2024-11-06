@@ -70,3 +70,17 @@
   width: 38px; 
   height: 40px; 
 }
+
+.logout {
+  cursor: pointer;
+  color: white;
+  font-size: 1.5rem;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #d9534f;
+}
+
+.logout:hover {
+  background-color: #c9302c; 
+}
+

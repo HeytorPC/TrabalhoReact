@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import Styles from './Login.module.css';
 import User from '/src/assets/user_login_man-512.png';
 
-export function Login() {
+export function Login({ onLogin }) {
   const navigate = useNavigate();
   const [email, setEmail] = useState('');
   const [senha, setSenha] = useState('');
@@ -24,6 +24,8 @@ export function Login() {
     }
     setMensagemErro('');
     console.log('Login efetuado com sucesso!');
+    onLogin(); 
+    navigate('/principal'); 
   };
 
   return (
@@ -54,5 +56,3 @@ export function Login() {
     </div>
   );
 }
-
-

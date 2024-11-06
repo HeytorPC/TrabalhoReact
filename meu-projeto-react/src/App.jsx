@@ -1,14 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Rotas } from './Routes/Routes'; 
 import { CarrinhoProvider } from './context/carrinhocontext';
-import Carrinho from './pages/carrinho/Carrinho';
+import Navbar from './components/Navbar/Navbar';
 
 function App() {
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const handleLogin = () => {
+    setIsAuthenticated(true); 
+  };
+  const handleLogout = () => {
+    setIsAuthenticated(false); 
+  };
+
   return (
     <CarrinhoProvider>
       <Router>
-        <Rotas />
+        <Navbar isAuthenticated={isAuthenticated} onLogout={handleLogout} />
+        <Rotas isAuthenticated={isAuthenticated} onLogin={handleLogin} />
       </Router>
     </CarrinhoProvider>
   );

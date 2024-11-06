@@ -11,8 +11,6 @@ export function Cadastro() {
   const [senha, setSenha] = useState('');
   const [confirmarSenha, setConfirmarSenha] = useState('');
   const [mensagemErro, setMensagemErro] = useState('');
-  
-  // Novos estados para o endereço
   const [cep, setCep] = useState('');
   const [rua, setRua] = useState('');
   const [bairro, setBairro] = useState('');

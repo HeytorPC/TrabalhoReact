@@ -59,9 +59,13 @@ export function ProdutosDestinos() {
                     <img src={destino.imagem} alt={destino.nome} className={styles.image} />
                         <p>{destino.nome}</p>
                         <p className={styles.preco}>R$ {destino.preco}</p>
-                    <button onClick={() => adicionarItens(destino)} className={styles.carrinhoBtn}>
-                        <img src={carrinhoImg} alt="Carrinho" className={styles.carrinhoImg} />
-                    </button>
+                        <button 
+                        onClick={() => { adicionarItens(destino);
+                        alert(`A viagem para "${destino.nome}" foi adicionado ao carrinho!`);
+                        }}
+                        className={styles.carrinhoBtn} >                      
+                         <img src={carrinhoImg} alt="Carrinho" className={styles.carrinhoImg} />
+                        </button>
                 </div>
             ))}
         </div>

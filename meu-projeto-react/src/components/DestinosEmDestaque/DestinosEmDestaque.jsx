@@ -28,8 +28,11 @@ function DestinosEmDestaque() {
                     <img src={destino.imagem} alt={destino.nome} className={styles.image} />
                     <p>{destino.nome}</p>      
                     <p className={styles.preco}>R$ {destino.preco}</p>
-                    <button onClick={() => adicionarItens(destino)} className={styles.carrinhoButton}>
-                            <img src={carrinhoImg} alt="Adicionar ao Carrinho" className={styles.carrinhoImg} />
+                    <button onClick={() => { adicionarItens(destino);
+                    alert(`A viagem para "${destino.nome}" foi adicionado ao carrinho!`);
+                    }}
+                    className={styles.carrinhoButton} >
+                    <img src={carrinhoImg} alt="Adicionar ao Carrinho" className={styles.carrinhoImg} />
                     </button>
                 </div>
             ))}
