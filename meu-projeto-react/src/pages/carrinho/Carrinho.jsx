@@ -54,7 +54,7 @@ export function Carrinho() {
             <button onClick={limparCarrinho} className={Styles.clearButton}>
               Limpar Carrinho
             </button>
-            <button onClick={handleFinalizarCompra} className={Styles.finalizarButton}>
+            <button onClick={limparCarrinho} className={Styles.finalizarButton}>
               Finalizar Compra
             </button>
           </div>
