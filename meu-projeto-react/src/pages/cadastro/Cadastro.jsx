@@ -47,7 +47,7 @@ export function Cadastro() {
     }
 
     if (cep.length !== 8) {
-      setMensagemErro('O CPF deve conter 11 dígitos');
+      setMensagemErro('O CEP deve conter 8 digitos');
       return;
     }
 
