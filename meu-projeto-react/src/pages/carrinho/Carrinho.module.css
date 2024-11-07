@@ -66,6 +66,7 @@ h1 {
   width: 40%;
   padding: 10px;
   border: none;
+  margin-left: 4px;
   border-radius: 20px;
   font-size: 16px;
   background-color: #4b7a9c;
@@ -103,6 +104,7 @@ h1 {
 .finalizarButton {
   width: 40%;
   padding: 10px;
+  margin-left: 20px;
   margin-top: 15px;
   border: none;
   border-radius: 20px;
