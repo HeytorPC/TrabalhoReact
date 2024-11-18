@@ -1,42 +1,106 @@
-# 📱 Clone Visual de Página de App
+# TrabalhoReact
+# 🛒 **E-Commerce React** 🛒
 
-Este projeto tem como objetivo criar um clone visual de uma página específica de um aplicativo. A meta é replicar a interface de usuário da página escolhida o mais fielmente possível utilizando TypeScript para o desenvolvimento.
+    Feito por: 
 
-## Visão Geral do Projeto
+    Heytor Pinel Cantelmo da Silva
+    Guilherme Senna Pires
+    Gabriel dos Santos Siqueira
+    Júlia Henriques de Azevedo Xavier
+    Mateus Azevedo Faria
+    Victor Hugo Barros Schuenk
 
-O propósito deste projeto é praticar e melhorar nossas habilidades de desenvolvimento frontend, copiando o design visual de uma página de aplicativo existente. Isso envolve o uso de TypeScript, React Native e outras tecnologias relacionadas para garantir que o layout, estilo e interatividade correspondam ao original.
 
-## 📎 Comparação
-![WhatsApp Image 2024-11-18 at 01 28 28](https://github.com/user-attachments/assets/7eab9774-f0e5-46e3-af14-3a8c357f717d)
- Esta foi a referencia usada
-![WhatsApp Image 2024-11-18 at 04 01 16](https://github.com/user-attachments/assets/75336654-08ce-4a0c-bb32-093a8aa7b598)
- E esta e como ficou no meu celular(não fiz com imagens iguais ou nomes iguais)
 
-## ⚙️ Tecnologias Utilizadas
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![React Native](https://img.shields.io/badge/React_Native-61DAFB?style=for-the-badge&logo=react&logoColor=black)
-![Expo](https://img.shields.io/badge/Expo-000020?style=for-the-badge&logo=expo&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) 
-![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white) 
+## 🌟 Alvos Principais
 
-## Instalação e Configuração
+### **Tela Inicial (Base de Lançamento)**
 
-1. **Clone o Repositório**:
-    ```sh
-    git clone https://github.com/seu-usuario/clone-visual-pagina-app.git
-    ```
+**Missão**: Exibir produtos disponíveis para compra, organizados em uma grade visual.
 
-2. **Navegue até o Diretório do Projeto**:
-    ```sh
-    cd clone-visual-pagina-app
-    ```
+**Detalhes**: Cada produto deve mostrar:
+- 📸 **Imagem do produto**
+- 📝 **Nome e descrição breve**
+- 💲 **Preço**
+- ➕ **Botão de adição** para enviar o item ao "Carregamento de Recursos" (carrinho).
 
-3. **Instale as Dependências**:
-    ```sh
-    npm install
-    ```
+### **Tela Sobre (Arquivo Confidencial do Time)**
 
-4. **Inicie o Aplicativo**:
-    ```sh
-    npx expo start
-    ```
+**Missão**: Fornecer informações confidenciais sobre os agentes (desenvolvedores) da equipe.
+
+**Detalhes**: Cada membro deve apresentar:
+- 📷 **Foto pessoal**
+- 🧩 **Resumo das habilidades e expertise**
+
+### **Tela do Carrinho (Centro de Operações de Compras)**
+
+**Missão**: Implementar um sistema de gerenciamento de itens adicionados ao carrinho.
+
+**Recursos**:
+- Utilização de **Context API** para controle global do estado.
+  
+**Exibição**:
+- 📦 **Número total de itens** no carrinho
+- 💲 **Valor total da compra**
+
+### **Tela de Login (Ponto de Acesso Restrito)**
+
+**Missão**: Proteger o e-commerce com um formulário de autenticação para usuários cadastrados.
+
+**Desafios**:
+- Campos obrigatórios para **e-mail** (contendo “@”) e **senha** (não vazia).
+- ✅ Opção de **log-out** para encerrar a sessão segura.
+
+### **Tela de Cadastro (Recrutamento de Novos Agentes)**
+
+**Missão**: Fornecer um formulário de cadastro para novos usuários.
+
+**Campos obrigatórios**:
+- Nome, e-mail, CPF, telefone, endereço, senha e confirmação de senha.
+
+**Desafios**:
+- 🆔 **CPF**: 11 dígitos.
+- 📧 **E-mail válido**
+- 🔑 **Confirmação de senha** correspondente à senha.
+
+---
+
+## 🎨 Estilo Camuflado e Atraente
+
+### **Estilos de Componentes**
+
+- **CSS Modules**: Para a maioria dos componentes, garantindo modularidade.
+- **styled-components**: Utilizado em pelo menos um componente, para versatilidade e customização visual.
+
+---
+
+## 🚀 Instruções de Execução
+
+### **Estrutura Tática**:
+
+- **Componentes**: Cada tela é implementada como um componente React funcional.
+- **Navegação entre Bases**: Integrada com o **React Router**.
+- **Organização Estratégica**: Divisão dos componentes em pastas de acordo com o treinamento recebido.
+
+### **Conexão com o Backend**:
+
+- Realizar requisições para a **API Restful** desenvolvida na disciplina.
+
+---
+
+## 📝 Entrega da Missão
+
+- **Local de Entrega**: Repositório Git da missão.
+- **Contribuição**: Cada agente deve ter pelo menos **um commit** para garantir presença na operação.
+- **Prazo Final**: 06/11/2024
+
+---
+
+## ✅ Critérios de Sucesso da Missão
+
+- **Funcionalidade Completa**: Implementação das funcionalidades especificadas.
+- **Organização e Qualidade do Código**.
+- **Uso Adequado de Tecnologias**: React, Context API, CSS Modules, styled-components.
+- **Design Atraente e Experiência de Usuário Otimizada**.
+
+---
