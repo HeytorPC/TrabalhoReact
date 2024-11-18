@@ -1,115 +1,56 @@
-# 🛒 **E-Commerce React** 🛒
+# 📱 Clone Visual de Página de App
 
-    Feito por: 
+Este projeto tem como objetivo criar um clone visual de uma página específica de um aplicativo. A meta é replicar a interface de usuário da página escolhida o mais fielmente possível utilizando TypeScript para o desenvolvimento.
 
-    Heytor Pinel Cantelmo da Silva
-    Guilherme Senna Pires
-    Gabriel dos Santos Siqueira
-    Júlia Henriques de Azevedo Xavier
-    Mateus Azevedo Faria
-    Victor Hugo Barros Schuenk
+## Visão Geral do Projeto
 
-
-
-## 🌟 Alvos Principais
-
-### **Tela Inicial (Base de Lançamento)**
-
-**Missão**: Exibir produtos disponíveis para compra, organizados em uma grade visual.
-
-**Detalhes**: Cada produto deve mostrar:
-- 📸 **Imagem do produto**
-- 📝 **Nome e descrição breve**
-- 💲 **Preço**
-- ➕ **Botão de adição** para enviar o item ao "Carregamento de Recursos" (carrinho).
-
-### **Tela Sobre (Arquivo Confidencial do Time)**
-
-**Missão**: Fornecer informações confidenciais sobre os agentes (desenvolvedores) da equipe.
-
-**Detalhes**: Cada membro deve apresentar:
-- 📷 **Foto pessoal**
-- 🧩 **Resumo das habilidades e expertise**
-
-### **Tela do Carrinho (Centro de Operações de Compras)**
-
-**Missão**: Implementar um sistema de gerenciamento de itens adicionados ao carrinho.
-
-**Recursos**:
-- Utilização de **Context API** para controle global do estado.
-  
-**Exibição**:
-- 📦 **Número total de itens** no carrinho
-- 💲 **Valor total da compra**
-
-### **Tela de Login (Ponto de Acesso Restrito)**
-
-**Missão**: Proteger o e-commerce com um formulário de autenticação para usuários cadastrados.
-
-**Desafios**:
-- Campos obrigatórios para **e-mail** (contendo “@”) e **senha** (não vazia).
-- ✅ Opção de **log-out** para encerrar a sessão segura.
-
-### **Tela de Cadastro (Recrutamento de Novos Agentes)**
-
-**Missão**: Fornecer um formulário de cadastro para novos usuários.
-
-**Campos obrigatórios**:
-- Nome, e-mail, CPF, telefone, endereço, senha e confirmação de senha.
-
-**Desafios**:
-- 🆔 **CPF**: 11 dígitos.
-- 📧 **E-mail válido**
-- 🔑 **Confirmação de senha** correspondente à senha.
-
----
-
-## 🎨 Estilo Camuflado e Atraente
-
-### **Estilos de Componentes**
-
-- **CSS Modules**: Para a maioria dos componentes, garantindo modularidade.
-- **styled-components**: Utilizado em pelo menos um componente, para versatilidade e customização visual.
-
----
-
-## 🚀 Instruções de Execução
-
-### **Estrutura Tática**:
-
-- **Componentes**: Cada tela é implementada como um componente React funcional.
-- **Navegação entre Bases**: Integrada com o **React Router**.
-- **Organização Estratégica**: Divisão dos componentes em pastas de acordo com o treinamento recebido.
-
-### **Conexão com o Backend**:
-
-- Realizar requisições para a **API Restful** desenvolvida na disciplina.
-
----
+O propósito deste projeto é praticar e melhorar nossas habilidades de desenvolvimento frontend, copiando o design visual de uma página de aplicativo existente. Isso envolve o uso de TypeScript, React Native e outras tecnologias relacionadas para garantir que o layout, estilo e interatividade correspondam ao original.
 
 ## ⚙️ Tecnologias Utilizadas
-![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black) 
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![React Native](https://img.shields.io/badge/React_Native-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![Expo](https://img.shields.io/badge/Expo-000020?style=for-the-badge&logo=expo&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) 
 ![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white) 
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white) 
-![Axios](https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge&logo=axios&logoColor=white)
 
----
+## Funcionalidades
 
-## 📝 Entrega da Missão
+- **Layout Preciso**: O layout da página do aplicativo é replicado para corresponder ao design original.
+- **Design Responsivo**: Assegura que o clone funcione bem em diferentes tamanhos e orientações de dispositivos.
+- **Elementos Interativos**: Botões, entradas e outros elementos interativos são funcionais e estilizados de acordo.
+- **Estilo Consistente**: Usa folhas de estilo e princípios de design consistentes para corresponder à aparência e sensação da página original do app.
 
-- **Local de Entrega**: Repositório Git da missão.
-- **Contribuição**: Cada agente deve ter pelo menos **um commit** para garantir presença na operação.
-- **Prazo Final**: 06/11/2024
+## Instalação e Configuração
 
----
+1. **Clone o Repositório**:
+    ```sh
+    git clone https://github.com/seu-usuario/clone-visual-pagina-app.git
+    ```
 
-## ✅ Critérios de Sucesso da Missão
+2. **Navegue até o Diretório do Projeto**:
+    ```sh
+    cd clone-visual-pagina-app
+    ```
 
-- **Funcionalidade Completa**: Implementação das funcionalidades especificadas.
-- **Organização e Qualidade do Código**.
-- **Uso Adequado de Tecnologias**: React, Context API, CSS Modules, styled-components.
-- **Design Atraente e Experiência de Usuário Otimizada**.
+3. **Instale as Dependências**:
+    ```sh
+    npm install
+    ```
 
----
+4. **Inicie o Aplicativo**:
+    ```sh
+    npx expo start
+    ```
 
+## Estrutura do Projeto
+
+```plaintext
+.
+├── assets          # Imagens e outros recursos estáticos
+├── components      # Componentes reutilizáveis usados no app
+├── screens         # Componentes de tela representando diferentes páginas do app
+├── App.tsx         # Ponto de entrada do aplicativo
+├── app.json        # Arquivo de configuração do Expo
+├── tsconfig.json   # Arquivo de configuração do TypeScript
+├── package.json    # Dependências e scripts do projeto
+└── README.md       # Documentação do projeto
